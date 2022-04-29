@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DFX</title>
-    <style>body{background-color: black; color: white;}</style>
+    <style>
+    body{background-color: black; color: white;}
+    .container{display: grid;
+                justify-content: center;}
+
+    .container h1{font-size: 60px;}
+
+    .atm-card { width: fit-content;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: gray;
+                border-radius: 5%;
+                }
+
+    .atm-card img {padding:2% 2px;}
+    .atm-card p {padding-left: 12px;}
+    
+    </style>
 </head>
 <body>
-    <h1>First Test</h1>
+    <section class="container">
+        <h1>Bienvenido // Welcome </h1>
+        <div class="atm-card">
+            <img src="https://i.postimg.cc/HWzMRnSG/atm.png" alt="logo">
+            <p>
+                <span>First attempt to a somewhat app, to see it,<br> just click the link</span>
+                <a href="https://dfx172.github.io/atm/"> Here.</a>
+            </p>
+        </div>
+    </section>
 </body>
 </html>
