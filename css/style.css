@@ -1,0 +1,169 @@
+*{  /*reseteamos propiedades*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+
+:root{
+        --black:#000;
+        --white:#fff;
+        --lightblue: rgb(99, 237, 214);
+        --lightblues: rgb(67, 193, 172);
+        --darkblue: rgb(5, 24, 100);
+        --sm: 1.4rem;
+        --md: 2rem;
+        --lg: 3rem;
+
+}
+
+html{font-size: 62.5%;} /*para usar rem, donde 1rem=10px*/
+
+.header__nav{display:none}
+.header__container--navmobile{display: flex;justify-content: space-between;background-color: var(--black);}
+.header__logo img{height: 40px; width: 100px;
+                     margin: 6px}
+.header__homeicon img{width: 30px;
+                  height: 30px;
+                  margin: 8px 6px 6px 10px;}
+.header__hamb{font-size: var(--lg);
+              margin: 8px 10px 6px 6px;}
+
+
+.c2,.c3,.c4,.c5{
+    width: 100vw;
+    min-width: 150px;
+    height: 20%;}
+
+.main__aboutme{background-color: var(--lightblue);
+                height: 80vh;
+                width: 100%;
+                display: flex;
+               flex-direction: column;
+                justify-content: space-evenly;}
+.main__aboutme h1{font-weight: bold;
+                  font-size: var(--lg);
+                    text-align: center;
+                    color: var(--darkblue);}
+
+.main__aboutme h2{font-weight: bold;
+                  font-size: var(--md);
+                  text-align: center;
+                  color: var(--darkblue);}
+      
+      
+
+.main__aboutme p{font-size: var(--sm);
+                text-align: center;
+                }
+
+.main__tecs{display: flex;justify-content: space-evenly;
+            margin: 8px ;}
+
+.main__tecs-icon{width: 30px;height:30px;}
+.main__tecs-name{display: none;}
+
+.main__projects{display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 70vh;
+                gap:40px;
+                background-color: var(--lightblue);}
+
+
+.main__projects_container{ 
+    display: flex;
+    gap: 15px;
+    height: 200px;
+    width: 280px;
+    overflow-x: scroll;  /*  para generar efecto de scroll*/
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;   /*  junto con otra propiedad en la tarjeta, si me pongo en la mitad de dos tarejetas, me lleva al centro de una*/
+   
+    
+}
+
+.test{width: auto;height: auto; position: relative;}
+
+.projects__container{   position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 220px;
+                        height: 180px;
+                        background-color:var(--lightblues);
+                        border: 2px solid var(--darkblue);
+                        border-radius: 20px;
+                        scroll-snap-align: center;   /* lo que permite que me llve al centro en el scroll*/}
+
+.projects__container-logo{width: 100%;
+                            border-radius: 20px 20px 0 0;
+                            }
+
+
+.main__container h1{font-weight: bold;
+                                font-size: var(--lg);
+                                  text-align: center;
+                                  color: var(--darkblue);}
+
+.main__container h2{font-weight: bold;
+                                font-size: var(--md);
+                                text-align: center;
+                                color: var(--darkblue);}
+                    
+.main__container p{font-size: var(--sm);
+                   text-align: center;
+                   padding: 0 20px;}
+              
+
+.projects__icons{display: flex;
+                justify-content: center;
+                gap: 8px;}
+
+.projects__container span{text-align: center;}
+.projects__container-buttons{display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            gap: 8px;}
+
+.projects__container-buttons a{background-color: var(--darkblue);
+                                width: 60px;
+                                text-align: center;
+                                padding: 4px;
+                                border-radius: 5px;
+                                border: 1px solid var(--lightblue);
+                                color:var(--lightblue);
+}
+
+.main__contact {height: 130px;display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color: var(--lightblues);}
+
+.main__contact h2{font-size:1.5rem;}
+
+.contact__datos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.contact__datos li{font-weight: bold;}
+
+.contact__redes{display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;}
+
+.contact__redess {display: flex;
+                    gap: 20px;
+                    font-size: 2rem;}
+
+
+
+
+

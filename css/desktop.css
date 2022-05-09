@@ -1,0 +1,188 @@
+:root{
+    --lg:14rem;
+}
+
+
+
+.header__container{display: flex;
+    background-color: var(--black);
+    justify-content: space-between;}
+
+.header__container--navmobile{display: flex;
+             justify-content: space-between;
+             width: 50%;}
+.header__logo img{height: 40px; width: 100px;
+     margin: 6px;}
+     
+.header__homeicon img{width: 30px;
+  height: 30px;
+  margin: 8px 6px 6px 10px;}
+.header__hamb{display: none;}
+
+.header__nav{display:flex;
+                gap: 1.5rem;
+                margin: 16px;
+                cursor: pointer;
+                font-size: 2rem;}
+
+.header__nav a:hover{color: var(--white);}
+
+.main__aboutme{background-color: var(--lightblue);
+    height: 93vh;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-evenly;}
+.main__aboutme h1{font-weight: bold;
+      font-size: var(--lg);
+        text-align: center;
+        color: var(--darkblue);}
+
+.main__aboutme h2{font-weight: bold;
+      font-size: var(--md);
+      text-align: center;
+      color: var(--darkblue);}
+
+
+
+.main__aboutme p{font-size: var(--sm);
+    text-align: center;
+    }
+
+.main__tecs{display: flex;justify-content: space-evenly;
+margin: 8px ;}
+
+.main__tecs-icon{width: 60px;height:60px;}
+.main__tecs-name{display: none;}
+.main__projects{display: none;}
+
+.main__page_projects{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    gap:40px;
+    background-color: var(--lightblue);}
+
+
+.main__projects_container{ 
+display: flex;
+flex-direction: column;
+gap: 20px;
+height: 300px;
+width: 380px;
+overflow-x: scroll;  /*  para generar efecto de scroll*/
+overscroll-behavior-x: contain;
+scroll-snap-type: x proximity;   /*  junto con otra propiedad en la tarjeta, si me pongo en la mitad de dos tarejetas, me lleva al centro de una*/
+}
+
+.main__projects_container::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 10px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+
+.main__projects_container.container::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+.main__projects_container.container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+
+.test{width: auto;height: auto; position: relative;}
+
+.projects__container{   position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 320px;
+            height: 280px;
+            background-color:var(--lightblues);
+            border: 2px solid var(--darkblue);
+            border-radius: 20px;
+            scroll-snap-align: center;   /* lo que permite que me llve al centro en el scroll*/}
+
+.projects__container-logo{width: 100%;
+                border-radius: 20px 20px 0 0;
+                height: 45px;}
+
+
+.main__page_projects h1{font-weight: bold;
+                    font-size: var(--lg);
+                      text-align: center;
+                      color: var(--darkblue);}
+
+.main__page_projects h2{font-weight: bold;
+                    font-size: var(--md);
+                    text-align: center;
+                    color: var(--darkblue);}
+        
+.main__page_projects p{font-size: var(--sm);
+       text-align: center;
+       padding: 0 20px;}
+
+.projects__container-buttons{display: flex;
+                width: 100%;
+                justify-content: center;
+                gap: 8px;}
+
+.projects__container-buttons a{background-color: var(--darkblue);
+                    width: 90px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    padding: 8px;
+                    border-radius: 9px;
+                    border: 2px solid var(--lightblue);
+                    color:var(--lightblue);
+}
+
+.main__contact {display: none;}
+
+.main__contact_page{height: 93vh;
+                    background-color: var(--lightblues);
+                }
+
+.main__contact_page h1{text-align: center;
+                        color: var(--darkblue);
+                        font-size: var(--lg);
+                    padding-top: 20px;}
+
+.main__contact_page p {text-align: center;
+                        font-size: 4rem;
+                        padding: 40px 20px;}
+
+.contact_page{display: flex;
+    justify-content: center;
+align-items: center;
+gap: 70px;}
+
+
+.contact__datos_page{display: flex;
+                    flex-direction: column; 
+                    gap: 20px;}
+
+.contact__datos_page h2{color: var(--darkblue);
+                        font-size: 3rem;}
+
+.contact__datos_page ul {display: flex;
+                        flex-direction: column;
+                        gap: 15px;}
+
+.contact__datos_page li {font-size: 2rem;
+                        font-weight: bold;}
+
+.contact__redes_page{display: flex;
+                    flex-direction: column;
+                    gap: 20px;}
+
+.contact__redes_page h2 {color: var(--darkblue);
+                        font-size: 3rem;}
+
+.contact__redess_page {display: flex;
+                        font-size: 4rem;
+                        gap: 15px;
+                        justify-content: center;}

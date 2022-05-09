@@ -4,65 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DFX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es mi portafolio con algunos proyectos realizados.">
+    <meta name="keywords" content="portafolio,projectos,programación">
+    <meta name="author" content="dfx172">
+    <title>Home</title>
+    <link rel="shortcut icon" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:800px)">
     <script src="https://kit.fontawesome.com/79614db57b.js" crossorigin="anonymous"></script>
-
-</head>
+    </head>
 <body>
-    <main>
-        <section class="Info">
-            <h1>Bienvenido // Welcome </h1>
-            <p>En esta pagina puedes encontrar algunos de <br>los projectos y diseños que he realizado.</p>
-
-        </section>
-        <section class="Projects">
-            <div class="atm-card">
-                <img src="https://i.postimg.cc/HWzMRnSG/atm.png" alt="logo">
-                <p>
-                    <span>First attempt to a somewhat app, to see it,<br> just click the link</span>
-                    <a href="https://dfx172.github.io/atm/"> Here.</a>
-                </p>
+    <header>
+        <div class="header__container">
+            <div class="header__container--navmobile">
+            <a class="header__homeicon" href="./index.html"><img src="https://cdn-icons-png.flaticon.com/512/2948/2948210.png" alt="home icon"></a>
+            <a class="header__logo" href="index.html"><img src="./Assets/img/logodfx.png"></a>
+            <a class="header__hamb" href="#" ><i class="fa-solid fa-bars"></i></a>
             </div>
-            <div class="food-card">
-                <img src="https://i.postimg.cc/d1mb5pXX/food.png" alt="logo">
-                <p>
-                    <span>This is a Landing page for an imaginary<br>restaurant, to see it, just click<br>the link</span>
-                    <a href="https://dfx172.github.io/food-grid/"> Here.</a>
-                </p>
-            </div>
-        </section>
-    </main>
-    <footer class="seccion">
-        <div class="container">
-            <div class="planet">
-                    <img src="https://images.pexels.com/photos/39561/solar-flare-sun-eruption-energy-39561.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="logo-footer">
-                    <p>Jhon Edison Chaves</p>
-            </div>
-             <div class="contact">
-                <h3>datos de contacto</h3>
-                <ul>
-                    <li>email: dfx233@hotmail.com</li>
-                    <li>telefono: 3026997253</li>
-                    <li>Medellin, Colombia</li>
-                </ul>
-            </div>
-            <div class="redes">
-                <h2>redes sociales</h2>
-                <ul class="redess">
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-         </div>
-        <div class="barra-footer">
-            &copy; Derechos reservados
+            <nav class="header__nav">
+                <a href="./html/projects.html">Projects</a>
+                <a href="./html/contact.html">Contact</a>
+            </nav>
         </div>
-    </footer>
+    </header>
+        <main class="main__container">
+        <div class="main__aboutme">
+            <h1>Bienvenido // Welcome </h1>
+            <p>En esta pagina puedes encontrar algunos de los projectos y diseños que he realizado.</p>
+            <h2>Sobre mi:</h2>
+            <p>
+                Entusiasta de la tegnologia y amante de las computadoras.<br>
+                Futuro Frontend Developer.
+            </p>
+            <h2>Algunas de las tegnologias que he estudiado:</h2>
+            <ul class="main__tecs">
+                <li>
+                    <img class="main__tecs-icon" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="icono html">
+                 </li>
+                <li>
+                    <img class="main__tecs-icon" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="icono css">
+                </li>
+                <li>
+                 <img class="main__tecs-icon" src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="javascript icon">  
+                </li>
+                <li>
+                    <img class="main__tecs-icon" src="https://cdn-icons-png.flaticon.com/512/3334/3334886.png" alt="react icon">
+                </li>
+                <li>
+                    <img class="main__tecs-icon" src="https://as2.ftcdn.net/v2/jpg/02/95/03/85/1000_F_295038583_mn0uxJ6A0YO57HA4xXQqHFUjiW1BcqBE.jpg" alt="angular icon">
+                </li>
+            </ul>
+            <ul class="main__tecs-name">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>ANGULAR</li>
+            </ul>
+            </div>
+        <div class="main__projects">
+            <h1>
+                Projects // Projectos
+            </h1>
+            <p>
+            Aqui algunos de los projectos e ideas que he llevado a cabo, 
+            </p>          
+            <div class="main__projects_container">
+                <div class="test">
+                    <div class="projects__container">
+                        <img class="projects__container-logo" src="https://i.postimg.cc/HWzMRnSG/atm.png" alt="logo de la app">
+                        <p>
+                        First attempt to a somewhat app<br>
+                        </p>
+                        <span>The tegnologies used on this idea include:</span>
+                            <figure class="projects__icons">
+                            <img  class="main__tecs-icon" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="">
+                            <img  class="main__tecs-icon"" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="">
+                            <img  class="main__tecs-icon"" src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="">
+                            </figure>
+                                <div class="projects__container-buttons">
+                                <a href="">Repository</a>
+                                <a href="https://dfx172.github.io/atm/">Live</a>
+                                </div>
+                    </div>
+                </div>      
+                <div class="test">    
+                    <div class="projects__container">
+                        <img class="projects__container-logo" src="https://i.postimg.cc/d1mb5pXX/food.png" alt="logo de la app">
+                        <p>
+                        This is a Landing page for an imaginary restaurant,<br>
+                        </p>
+                        <span>The tegnologies used on this idea include:</span>
+                        <figure class="projects__icons">
+                        <img  class="main__tecs-icon" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="">
+                        <img  class="main__tecs-icon"" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="">
+                        </figure>
+                        <div class="projects__container-buttons">
+                        <a href="">Repository</a>
+                        <a href="https://dfx172.github.io/food-grid/">Live</a>
+                        </div>
+                    </div>
+                </div>
+       
+                 <div class="test">    
+                <div class="projects__container">
+                    <img class="projects__container-logo" src="https://i.postimg.cc/d1mb5pXX/food.png" alt="logo de la app">
+                    <p>
+                    Future idea,<br>
+                    </p>
+                    <span>The tegnologies used on this idea include:</span>
+                    <figure class="projects__icons">
+                    <img  class="main__tecs-icon" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="">
+                    <img  class="main__tecs-icon"" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="">
+                    </figure>
+                    <div class="projects__container-buttons">
+                    <a href="">Repository</a>
+                    <a href="">Live</a>
+                    </div>
+                </div>
+                 </div>
+            </div>
+        </div>
+      <section class="main__contact">
+        <div class="contact__datos">
+            <h2>datos de contacto</h2>
+            <ul>
+                <li>Email: dfx233@hotmail.com</li>
+                <li>Telefono: 3026997253</li>
+                <li>Medellin, Colombia</li>
+            </ul>
+        </div>
+        <div class="contact__redes">
+            <h2>redes sociales</h2>
+            <ul class="contact__redess">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+      </section>
+    </main>
 </body>
 </html>
